@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente - Help Desk</title>
+</head>
+<body>
+
+    <header>
+        <h1>Reportar Nuevo Incidente Técnico</h1>
+        <p>Universidad Técnica de Manabí | Facultad de Ciencias Informáticas</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html"><strong>Reportar Incidente</strong></a></li>
+            <li><a href="tickets.html">Panel de Tickets</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulario de Registro de Ticket</h2>
+            <p>Todos los campos son obligatorios para la asignación de un técnico.</p>
+
+            <form action="tickets.html" method="get">
+                <fieldset>
+                    <legend>Datos del Solicitante y del Equipo</legend>
+                    
+                    <p>
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo Institucional:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="ejemplo@utm.edu.ec">
+                    </p>
+
+                    <p>
+                        <label for="area">Área / Departamento:</label>
+                        <select id="area" name="area" required>
+                            <option value="">-- Seleccione una opción --</option>
+                            <option value="laboratorio">Laboratorio de TI</option>
+                            <option value="datacenter">Data Center Central</option>
+                            <option value="aulas">Aulas Virtuales</option>
+                            <option value="administrativo">Bloque Administrativo</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del Incidente</legend>
+                    
+                    <p>
+                        <label for="prioridad">Nivel de Prioridad:</label>
+                        <select id="prioridad" name="prioridad" required>
+                            
+                            <option value="">-- Seleccione una prioridad --</option>
+                            <option value="baja">Baja - Consulta/Actualización</option>
+                            <option value="media">Media - Falla Parcial de Equipo</option>
+                            <option value="alta">Alta - Caída de Servicio/Red</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="descripcion">Descripción Detallada del Problema:</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="5" cols="40" required placeholder="Describa el problema físico o de red aquí..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Enviar Ticket de Soporte">
+                    <input type="reset" value="Limpiar Formulario">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Help Desk UTM - Desarrollado por Jose Solorzano</p>
+    </footer>
+
+</body>
+</html>

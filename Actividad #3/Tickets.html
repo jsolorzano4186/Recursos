@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Tickets - Help Desk</title>
+    <style>
+        
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Panel de Control de Incidentes</h1>
+        <p>Universidad Técnica de Manabí | Facultad de Ciencias Informáticas</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Incidente</a></li>
+            <li><a href="tickets.html"><strong>Panel de Tickets</strong></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Historial de Requerimientos Recientes</h2>
+            <p>Lista general para el seguimiento de técnicos y administradores.</p>
+
+            <!-- Se eliminó el atributo obsoleto border="1" -->
+            <table>
+                <caption>Tickets de Soporte Activos</caption>
+                <thead>
+                    <tr>
+                        <th>ID Ticket</th>
+                        <th>Fecha</th>
+                        <th>Área</th>
+                        <th>Prioridad</th>
+                        <th>Estado</th>
+                        <th>Técnico Asignado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TK-1024</td>
+                        <td>2026-05-20</td>
+                        <td>Data Center Central</td>
+                        <td><strong>Alta</strong></td>
+                        <td><mark>En Proceso</mark></td>
+                        <td>Ing. Carlos Mendoza</td>
+                    </tr>
+                    <tr>
+                        <td>TK-1025</td>
+                        <td>2026-05-21</td>
+                        <td>Laboratorio de TI</td>
+                        <td>Media</td>
+                        <td>Abierto</td>
+                        <td>Por Asignar</td>
+                    </tr>
+                    <tr>
+                        <td>TK-1023</td>
+                        <td>2026-05-19</td>
+                        <td>Bloque Administrativo</td>
+                        <td>Baja</td>
+                        <td>Resuelto</td>
+                        <td>Ing. Ana Giler</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Help Desk UTM - Desarrollado por Jose Solorzano</p>
+    </footer>
+
+</body>
+</html>
