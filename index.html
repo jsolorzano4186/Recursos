@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Kit & Design System - Help Desk UTM</title>
+    <!-- Vinculación del archivo de estilos del Design System -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Librería de Componentes UI (Design System)</h1>
+            <p><strong>Proyecto:</strong> Help Desk - Gestión de Incidentes de Data Center</p>
+            <p><strong>Desarrollador:</strong> Jose Solórzano | UTM Quinto Semestre</p>
+        </header>
+
+        <main>
+            <!-- SECCIÓN DE BOTONES -->
+            <section>
+                <h2>1. Componente: Botones (.btn)</h2>
+                <div class="component-section">
+                    <button class="btn btn-primary">Botón Primario</button>
+                    <button class="btn btn-secondary">Botón Secundario</button>
+                    <button class="btn btn-danger">Botón de Peligro</button>
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE FORMULARIOS -->
+            <section>
+                <h2>2. Componente: Formularios (.form-control)</h2>
+                <div class="component-section" style="flex-direction: column; align-items: flex-start;">
+                    <div class="form-group">
+                        <label class="form-label" for="txt-ejemplo">Campo de Texto (Input):</label>
+                        <input type="text" id="txt-ejemplo" class="form-control" placeholder="Haga clic aquí para ver la sombra...">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="select-ejemplo">Lista Desplegable (Select):</label>
+                        <select id="select-ejemplo" class="form-control">
+                            <option value="">Seleccione una opción</option>
+                            <option value="1">Opción de prueba</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE ALERTAS / BADGES -->
+            <section>
+                <h2>3. Componente: Alertas / Badges de Prioridad (.badge)</h2>
+                <div class="component-section">
+                    <span class="badge badge-low">Baja</span>
+                    <span class="badge badge-medium">Media</span>
+                    <span class="badge badge-high">Alta</span>
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE TARJETAS / CARDS -->
+            <section>
+                <h2>4. Componente: Tarjetas de Ticket (.card)</h2>
+                <div class="component-section">
+                    <article class="card">
+                        <div class="card-header">
+                            <span class="card-title">Ticket #TK-1024</span>
+                            <span class="badge badge-high">Alta</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Área:</strong> Data Center Central</p>
+                            <p><strong>Descripción:</strong> Caída de latencia en el nodo principal de conectividad de UTMonline.</p>
+                            <p style="margin-top: 15px; font-size: 0.8rem; color: #7F8C8D;">Asignado a: Ing. Carlos Mendoza</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

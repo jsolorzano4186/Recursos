@@ -1,0 +1,200 @@
+:root {
+    
+    --color-primary: #0A3D62;      /* Azul Oscuro (Identidad Data Center) */
+    --color-secondary: #3C6382;    /* Azul Secundario */
+    --color-background: #F4F6F9;   /* Gris claro de fondo */
+    --color-text: #2C3E50;         /* Texto principal oscuro */
+    
+    /* Colores de estados e incidentes */
+    --color-success: #2ECC71;      /* Verde (Ticket Resuelto) */
+    --color-warning: #F39C12;      /* Naranja (Prioridad Media / En Proceso) */
+    --color-danger: #E74C3C;       /* Rojo (Prioridad Alta / Caída de Red) */
+    
+    /* Fuentes y bordes */
+    --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --border-radius: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-base);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--color-secondary);
+    margin: 25px 0 15px 0;
+    font-size: 1.4rem;
+}
+
+.component-section {
+    padding: 15px;
+    border: 1px dashed #BDC3C7;
+    border-radius: var(--border-radius);
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ==========================================================================
+   1. COMPONENTES: BOTONES (Clases comunes y estados de interacción)
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:focus {
+    outline: 3px solid rgba(10, 61, 98, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+}
+.btn-primary:hover {
+    background-color: #072A46;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: #FFFFFF;
+}
+.btn-secondary:hover {
+    background-color: #2C4A61;
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    color: #FFFFFF;
+}
+.btn-danger:hover {
+    background-color: #C0392B;
+}
+
+/* ==========================================================================
+   2. COMPONENTES: FORMULARIOS (Bordes, Padding y Sombras al hacer foco)
+   ========================================================================== */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #BDC3C7;
+    border-radius: var(--border-radius);
+    background-color: #FFFFFF;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 8px rgba(10, 61, 98, 0.2);
+}
+
+/* ==========================================================================
+   3. COMPONENTES: TARJETAS (Cards con box-shadow y bordes redondeados)
+   ========================================================================== */
+.card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* ==========================================================================
+   4. COMPONENTES: ALERTAS / BADGES (Indicadores de Prioridad)
+   ========================================================================== */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+.badge-low {
+    background-color: var(--color-success);
+}
+
+.badge-medium {
+    background-color: var(--color-warning);
+}
+
+.badge-high {
+    background-color: var(--color-danger);
+}
