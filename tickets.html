@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Tickets - Help Desk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Panel de Control de Incidentes</h1>
+            <p>Monitoreo Global de Requerimientos - Data Center UTM</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Incidente</a></li>
+                <li><a href="tickets.html" class="active">Panel de Tickets</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Historial de Requerimientos Recientes</h2>
+            <p>Lista de control optimizada para técnicos y administradores de la Facultad de Ciencias Informáticas.</p>
+            
+            <div class="table-responsive">
+                <table>
+                    <caption>Tickets de Soporte Activos</caption>
+                    <thead>
+                        <tr>
+                            <th>ID Ticket</th>
+                            <th>Área / Departamento</th>
+                            <th>Prioridad</th>
+                            <th>Estado Actual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TK-1024</td>
+                            <td>Data Center Central</td>
+                            <td><span class="badge badge-high">Alta</span></td>
+                            <td>En Proceso (Ing. Mendoza)</td>
+                        </tr>
+                        <tr>
+                            <td>TK-1025</td>
+                            <td>Laboratorio de TI</td>
+                            <td><span class="badge badge-medium">Media</span></td>
+                            <td>Abierto / Por Asignar</td>
+                        </tr>
+                        <tr>
+                            <td>TK-1023</td>
+                            <td>Bloque Administrativo</td>
+                            <td><span class="badge badge-low">Baja</span></td>
+                            <td>Resuelto (Ing. Ana Giler)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <a href="index.html" class="btn btn-secondary">Volver al Inicio</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

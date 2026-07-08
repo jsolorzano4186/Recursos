@@ -3,77 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI Kit & Design System - Help Desk UTM</title>
-    <!-- Vinculación del archivo de estilos del Design System -->
+    <title>Help Desk - Data Center UTM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
         <header>
-            <h1>Librería de Componentes UI (Design System)</h1>
-            <p><strong>Proyecto:</strong> Help Desk - Gestión de Incidentes de Data Center</p>
-            <p><strong>Desarrollador:</strong> Jose Solórzano | UTM Quinto Semestre</p>
+            <h1>Sistema de Gestión de Incidentes - Help Desk</h1>
+            <p>Universidad Técnica de Manabí | Facultad de Ciencias Informáticas</p>
         </header>
 
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Incidente</a></li>
+                <li><a href="tickets.html">Panel de Tickets</a></li>
+            </ul>
+        </nav>
+
         <main>
-            <!-- SECCIÓN DE BOTONES -->
-            <section>
-                <h2>1. Componente: Botones (.btn)</h2>
-                <div class="component-section">
-                    <button class="btn btn-primary">Botón Primario</button>
-                    <button class="btn btn-secondary">Botón Secundario</button>
-                    <button class="btn btn-danger">Botón de Peligro</button>
-                </div>
-            </section>
-
-            <!-- SECCIÓN DE FORMULARIOS -->
-            <section>
-                <h2>2. Componente: Formularios (.form-control)</h2>
-                <div class="component-section" style="flex-direction: column; align-items: flex-start;">
-                    <div class="form-group">
-                        <label class="form-label" for="txt-ejemplo">Campo de Texto (Input):</label>
-                        <input type="text" id="txt-ejemplo" class="form-control" placeholder="Haga clic aquí para ver la sombra...">
+            <h2>Estado Actual de la Infraestructura</h2>
+            <p>Monitoreo en tiempo real de los servicios del Data Center Central.</p>
+            
+            <div class="dashboard-grid">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Servidores de Red</h3>
+                        <span class="badge badge-low">Operativo</span>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="select-ejemplo">Lista Desplegable (Select):</label>
-                        <select id="select-ejemplo" class="form-control">
-                            <option value="">Seleccione una opción</option>
-                            <option value="1">Opción de prueba</option>
-                        </select>
+                    <p>Fallas críticas: 0. Conectividad estable en el Campus Portoviejo.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Plataforma UTMonline</h3>
+                        <span class="badge badge-medium">Mantenimiento</span>
                     </div>
-                </div>
-            </section>
+                    <p>Reportes activos: 2 incidentes de latencia registrados en las aulas virtuales.</p>
+                </article>
+            </div>
 
-            <!-- SECCIÓN DE ALERTAS / BADGES -->
-            <section>
-                <h2>3. Componente: Alertas / Badges de Prioridad (.badge)</h2>
-                <div class="component-section">
-                    <span class="badge badge-low">Baja</span>
-                    <span class="badge badge-medium">Media</span>
-                    <span class="badge badge-high">Alta</span>
-                </div>
-            </section>
-
-            <!-- SECCIÓN DE TARJETAS / CARDS -->
-            <section>
-                <h2>4. Componente: Tarjetas de Ticket (.card)</h2>
-                <div class="component-section">
-                    <article class="card">
-                        <div class="card-header">
-                            <span class="card-title">Ticket #TK-1024</span>
-                            <span class="badge badge-high">Alta</span>
-                        </div>
-                        <div class="card-body">
-                            <p><strong>Área:</strong> Data Center Central</p>
-                            <p><strong>Descripción:</strong> Caída de latencia en el nodo principal de conectividad de UTMonline.</p>
-                            <p style="margin-top: 15px; font-size: 0.8rem; color: #7F8C8D;">Asignado a: Ing. Carlos Mendoza</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
+            <div style="margin-top: 30px; text-align: center;">
+                <p style="margin-bottom: 10px;">¿Desea revisar el historial global o gestionar un requerimiento?</p>
+                <a href="tickets.html" class="btn btn-primary">Ir al Panel de Tickets</a>
+            </div>
         </main>
     </div>
-
 </body>
 </html>
