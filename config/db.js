@@ -1,4 +1,8 @@
 const mongoose = require('mongoose');
+const dns = require('dns');
+
+// Forzar la resolución DNS para evitar el bloqueo ECONNREFUSED
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 const connectDB = async () => {
     try {
